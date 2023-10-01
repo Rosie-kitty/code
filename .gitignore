@@ -1,32 +1,71 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+#include <iostream>
 
-# Precompiled Headers
-*.gch
-*.pch
+    using namespace std;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+    int main();
+    {
+        cout << "x y z ex" << endl;
+        for (int x = 0; x < 2; x++)
+            for (int y = 0; y < 2; y++)
+                for (int z = 0; z < 2; z++)
+                {
+                    if (/*expression*/)
+                    {
+                        int ex = /*expression*/;
+                            cout << x << ' ' << y  << ' ' << z << ' ' << ex << endl;
+                    }
+                    else
+                    {
+                        int ex = /*expression*/;
+                            cout << x << ' ' << y << ' ' << z << ' ' << ex << endl;
+                    }
+                }
+            
+    }
+/* замудренная альтернатива:
+#include <iostream>
+using namespace std;
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+int main()
+{
+    // Для справки:
+    // { '∧', '∨', '¬', '(', ')', '→', '⇔', '⊕' };
+    // { '&&', '||', '!', '(', ')', '! ||', '==', '^' };
+    int x = 0, y = 0, z = 0, ex; //ввод переменных, входящих в выражение, и переменной, которой дальше присваивается значение выражения
+    ex = /*выражение*/;
+    cout << "A B C ex\n";
+    if (x == 0, y == 0, z == 0)
+    {
+        cout << x << ' ' << y << ' ' << z << ' ' << ex << endl; //выполнение выражения при нулевом значении всех переменных
+        z = 1; //замена значения для дальнейшего построения таблицы истинности
+        ex = /*выражение*/;  //присваивание нового значения переменной для добавления нового результата в таблицу
+        cout << x << ' ' << y << ' ' << z << ' ' << ex << endl;
+        z = 0;
+        y = 1;
+        ex = /*выражение*/;
+        cout << x << ' ' << y << ' ' << z << ' ' << ex << endl; 
+        z = 1;
+        ex = /*выражение*/;
+        cout << x << ' ' << y << ' ' << z << ' ' << ex << endl; 
+        x = 1;
+        z = 0;
+        y = 0;
+        ex = /*выражение*/;
+        cout << x << ' ' << y << ' ' << z << ' ' << ex << endl; 
+        z = 1;
+        ex = /*выражение*/;
+        cout << x << ' ' << y << ' ' << z << ' ' << ex << endl; 
+        y = 1;
+        z = 0;
+        ex = /*выражение*/;
+        cout << x << ' ' << y << ' ' << z << ' ' << ex << endl;
+        z = 1;
+        ex = /*выражение*/;
+        cout << x << ' ' << y << ' ' << z << ' ' << ex << endl;
+    };
+}
+*/
